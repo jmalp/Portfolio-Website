@@ -3,32 +3,71 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+--foreground-rgb: 0, 0, 0;
+--background-start-rgb: 214, 219, 220;
+--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+--foreground-rgb: 255, 255, 255;
+--background-start-rgb: 0, 0, 0;
+--background-end-rgb: 0, 0, 0;
+}
 }
 
 body {
-    font-family: "Noto Sans Display", sans-serif;
-    font-size: 18px;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+font-family: "Noto Sans Display", sans-serif;
+font-size: 18px;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+    "wdth" 100;
 }
 
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-balance {
+text-wrap: balance;
+}
+}
+
+.project-details {
+font-family: "Noto Sans Display", sans-serif;
+font-size: 16px;
+line-height: 1.4;
+padding: 50px;
+}
+
+.markdown-content h1 {
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 12px;
+text-align: center;
+}
+
+.markdown-content h2 {
+font-size: 20px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 15px;
+}
+
+.markdown-content p {
+margin-bottom: 10px;
+}
+
+.markdown-content ul {
+list-style-type: disc;
+padding-left: 25px;
+margin-bottom: 8px;
+}
+
+.markdown-content li {
+margin-bottom: 2px;
+}
+
+.markdown-content * + h2 {
+margin-top: 16px;
 }
